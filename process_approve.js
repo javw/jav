@@ -165,13 +165,7 @@ function save_approve(){
 				success : function(result){
 					console.log("on Success process : "+result);
 					limit = result[0];
-					orderDate = result[1];
-					validTimeToApprove = result[2];	
-					if ( validTimeToApprove===false ) {
-					confirm_warning("You can not approve because approval time already expired");					
-					} else{
-						cekTeritory(temp);
-					}					
+					orderDate = result[1];			
 				}
 			});
 
